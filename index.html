@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.24/angular-ui-router.js"></script>
+ 
+      <!-- Angular Material requires Angular.js Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-messages.min.js"></script>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  </head>
+  <body>
+    <!-- <input type="file" id="inpFile"  multiple >, -->
+
+    
+
+    <form id="formElem">
+      <input type="text" name="firstName" value="John">
+      Picture: <input type="file" name="picture" accept="image/*">
+      <input type="submit">
+    </form>
+
+    <div ng-controller="AppCtrl" ng-cloak=""  ng-app="MyApp">
+
+      <!-- <div flex-gt-sm="50" flex="">
+    
+        <md-toolbar layout="row" class="md-hue-3">
+          <div class="md-toolbar-tools">
+            <span>Normal</span>
+          </div>
+        </md-toolbar> -->
+    
+        <!-- <md-content> -->
+          <md-list >
+            <!-- <md-subheader class="md-no-sticky">Zdjęcia</md-subheader> -->
+            <md-list-item class="md-3-line"  ng-class="{selectedIndex: selectedIndex===$index}" ng-repeat="item in todos" ng-click="fnReviewEmployeeId($index)">
+              <!-- <md-checkbox class="md-secondary">asd</md-checkbox> -->
+              <!-- <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}"> -->
+              <div class="md-list-item-text" layout="column">
+                <h3>{{item}}</h3>
+                <!-- <h4>{{ item.what }}</h4> -->
+                <!-- <p>{{ item.notes }}</p> -->
+              </div>
+              <md-divider></md-divider>
+            </md-list-item>
+            
+      
+    </div>
+    
+
+    <!-- <button id="start_upload" type="button">Start uploads</button>  -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    
+    <script src="client.js" type="text/javascript" ></script>
+  </body>
+
+</html>
